@@ -13,11 +13,12 @@ namespace Shop.Web.Controllers.API
         {
             this.productRepository = productRepository;
         }
-        
+
+
         [HttpGet]
         public ActionResult GetProduct()
         {
-            return Ok(this.productRepository.GetAll());
+            return Ok(this.productRepository.GetAllWithUsers());
         }
     }
 }

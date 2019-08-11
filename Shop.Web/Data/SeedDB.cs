@@ -23,7 +23,7 @@
         public async Task SeedAsync()
         {
             await this.context.Database.EnsureCreatedAsync();
-
+             
             var user = await this.userHelper.GetUserByEmailAsync("gabrielpanta1234@gmail.com");
             if (user == null)
             {
